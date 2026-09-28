@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f8fa;
+  color: #064b78;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 16px 36px;
+}
+
+/* Header */
+
+header {
+  background: white;
+  border: 1px solid #dce2e6;
+  border-left: 3px solid #009c91;
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #064b78;
+}
+
+header h2 {
+  margin: 2px 0 0;
+  color: #009c91;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  margin: 14px auto;
+}
+
+/* Student Card */
+
+.student-card {
+  width: 100%;
+  background: white;
+  padding: 18px 14px 15px;
+  border: 1px solid #dce2e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e5e8;
+}
+
+.profile img {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0 0 5px;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  color: #064b78;
+}
+
+.profile-info p {
+  margin: 4px 0;
+  font-size: 10px;
+  color: #064b78;
+}
+
+.profile-info .department {
+  color: #009c91;
+  font-weight: bold;
+}
+
+/* Student Stats */
+
+.student-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.stat-box {
+  min-height: 52px;
+  border: 1px solid #dce2e6;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.stat-box span {
+  font-size: 8px;
+  color: #668095;
+}
+
+.stat-box strong {
+  font-size: 10px;
+}
+
+.cgpa {
+  color: #008f43;
+}
+
+.attendance {
+  color: #f47b20;
+}
+
+.eligible {
+  color: #008f43;
+}
+
+.not-eligible {
+  color: #d62828;
+}
+
+/* Subjects */
+
+.subjects-section {
+  margin-top: 14px;
+  background: white;
+  border: 1px solid #dce2e6;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  border-bottom: 1px solid #e1e5e8;
+  padding-bottom: 7px;
+}
+
+.section-title h2 {
+  margin: 0;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #064b78;
+}
+
+.subjects-section ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.subjects-section li {
+  height: 31px;
+
+  border: 1px solid #dce2e6;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  padding: 5px 8px;
+
+  font-size: 10px;
+  color: #064b78;
+}
+
+.subjects-section li span {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  background: #009c91;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 8px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 14px;
+  background: #26343b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 8px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .page {
+    padding: 12px;
+  }
+
+  .student-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subjects-section ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .student-stats {
+    grid-template-columns: 1fr;
+  }
+}

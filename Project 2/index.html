@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Profile</h1>
+
+        <label>Student name</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+
+        <label>Roll number</label>
+        <input type="text" id="rollNumber" placeholder="Enter roll number">
+
+        <label>Marks</label>
+        <input type="number" id="marks" placeholder="Enter marks">
+
+        <button onclick="displayProfile()">Display Profile</button>
+
+        <div class="details">
+            <h2>Student Details</h2>
+
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Roll No:</strong> <span id="displayRoll"></span></p>
+            <p><strong>Marks:</strong> <span id="displayMarks"></span></p>
+            <p><strong>Grade:</strong> <span id="displayGrade"></span></p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>

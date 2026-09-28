@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="counter-card" aria-labelledby="title">
+    <p class="subtitle">Basic count app</p>
+    <h1 id="title">Counter</h1>
+
+    <output id="count" class="count" aria-live="polite">0</output>
+
+    <div class="controls" aria-label="Counter controls">
+      <button class="change" id="decrease" type="button" aria-label="Decrease count">−</button>
+      <button class="reset" id="reset" type="button">Reset</button>
+      <button class="change" id="increase" type="button" aria-label="Increase count">+</button>
+    </div>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
